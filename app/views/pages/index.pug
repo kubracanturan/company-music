@@ -1,0 +1,8 @@
+extends ../layout/default
+
+block content
+    h1 Welcome
+    script(src='/socket.io/socket.io.js')
+    script.
+        var socket = io();
+
