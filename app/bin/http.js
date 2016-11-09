@@ -5,9 +5,11 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compression = require('compression');
+const session = require('express-session');
+const mongoStore = require('connect-mongo')(session);
 const pug = require('pug');
 const app = express();
-const index = require(path.join(__dirname, '..', 'routes', 'index', 'index.js'));
+const index = require(path.join(__dirname, '..', 'routes', 'index.js'));
 
 app.set('views', path.join(__dirname, '..', 'views', 'pages'));
 app.set('view engine', 'pug');
@@ -17,7 +19,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'static')));
-app.use('/', index);
+app.use(session({
+ resave: false,
+ saveUninitialized: true,
+ secret: 'Company Music',
+ store: new mongoStore({
+     url: 'mongodb://localhost/companymusic',
+     collection : 'sessions'
+     })
+ }));
+app.use('*', index);
 
 const http = require('http').Server(app);
 var io = require('socket.io')(http);
@@ -32,7 +43,7 @@ http.listen(3000, function () {
 });
 
 
-
+require(path.join(__dirname, '..', 'db', 'index.js'));
 
 
 
