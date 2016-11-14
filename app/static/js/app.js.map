@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["fff","re"],"mappings":"AAAA,IAAIA,MAAM,UAAUC,EAAV,EAAc;AACpB,WAAOA,KAAK,GAAZ;AACH,CAFD","file":"app.js","sourcesContent":["var fff = function (re) {\r\n    return re * 333;\r\n}"]}
