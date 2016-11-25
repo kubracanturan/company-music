@@ -1,13 +1,13 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/companymusic', function (err) {
     if (err) throw err; else console.log('connected');
 });
 
-var db = mongoose.connection;
+const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 db.once('open', function () {
-    var defaults = {};
+    const defaults = {};
     global.DBModels = {};
 
     DBModels['user'] = require("./models/" + 'user.js')(mongoose);

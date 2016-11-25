@@ -1,8 +1,12 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const path = require('path');
+const router = express.Router();
+const api = require(path.join(__dirname, 'api', 'index'));
 
 router.get('/', function(req, res) {
     res.render('index', { title: 'Welcome', description: 'Company Music Website' });
 });
+
+router.use('/api', api);
 
 module.exports = router;
