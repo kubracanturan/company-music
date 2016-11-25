@@ -16,19 +16,18 @@ module.exports = function (mongoose) {
         updated_at: Date
     });
 
+    const User = mongoose.model('User', userSchema);
 
-    var User = mongoose.model('User', userSchema);
-
-    var getUserById = function(id, callback) {
+    const getUserById = function (id, callback) {
         User.findById(id, callback);
     };
 
-    var getUserByUsername = function(username, callback) {
-        var query = {username: username};
+    const getUserByUsername = function (username, callback) {
+        const query = {username: username};
         User.findOne(query, callback);
     };
 
-    var signIn = function (person, callback) {
+    const signIn = function (person, callback) {
         User.findOne(person, callback);
     };
     
