@@ -1,17 +1,22 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/companymusic', function (err) {
+mongoose.connect('mongodb://localhost/companymusic',  (err) => {
     if (err) throw err; else console.log('connected');
 });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
-db.once('open', function () {
-    const defaults = {};
-    global.DBModels = {};
+global.DBDefaults = {};
+global.DBModels = {};
+let includeModel = (name) => {
+    global.DBModels[name] = new (require("./models/" + name + '.js'))(mongoose);
+    global.DBDefaults[name] = new (require("./default/" + name + '.js'))(mongoose);
+    if (global.DBDefaults[name].create != null) {
+        global.DBDefaults[name].create();
+    }
+};
 
-    DBModels['user'] = require("./models/" + 'user.js')(mongoose);
-    defaults['user'] = require("./default/" + 'user.js')(mongoose);
-
+db.once('open', () => {
+    includeModel('user');
 });
 
