@@ -4,7 +4,8 @@
   "description": "# company-music",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app/bin/http.js"
+    "start": "nodemon app/bin/http.js",
+    "docs": "esdoc -c docs-config/app.json && esdoc -c docs-config/bin.json && esdoc -c docs-config/db.json && esdoc -c docs-config/helpers.json && esdoc -c docs-config/routes.json"
   },
   "repository": {
     "type": "git",

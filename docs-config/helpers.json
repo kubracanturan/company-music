@@ -1,0 +1,4 @@
+{
+  "source": "./app/helpers",
+  "destination": "./docs/helpers"
+}

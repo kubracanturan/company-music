@@ -1,0 +1,4 @@
+{
+  "source": "./app/routes",
+  "destination": "./docs/routes"
+}
