@@ -1,3 +1,3 @@
-var fff = function (re) {
+let fff = (re) => {
     return re * 333;
-}
+};

@@ -1,7 +1,6 @@
 class user {
     constructor (mongoose) {
         const schema = mongoose.Schema;
-
         const userSchema = schema({
             name: { type: String, required: true },
             surname: { type: String, required: true },
@@ -16,7 +15,6 @@ class user {
             created_at: Date,
             updated_at: Date
         });
-
         this.user = mongoose.model('User', userSchema);
     }
 

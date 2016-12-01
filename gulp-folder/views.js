@@ -18,9 +18,6 @@ module.exports = function (modules) {
             }))
             .pipe(modules.gulp.dest('app/static'));
     });
-
-
-
 };
 
 

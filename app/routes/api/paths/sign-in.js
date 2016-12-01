@@ -2,13 +2,13 @@ const express = require('express');
 const router = express.Router();
 
 
-router.post('/', function (req, res) {
+router.post('/',  (req, res) => {
     console.log();
     if (req.param('username') && req.param('password')) {
         global.DBModels.user.signIn({
             username: req.param('username'),
             password: req.param('password')
-        }, function (err, status) {
+        },  (err, status) => {
             if (err) throw err;
             if (status) {
                 res.json({

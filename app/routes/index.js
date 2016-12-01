@@ -3,7 +3,7 @@ const path = require('path');
 const router = express.Router();
 const api = require(path.join(__dirname, 'api', 'index'));
 
-router.get('/', function(req, res) {
+router.get('/', (req, res) => {
     res.render('index', { title: 'Welcome', description: 'Company Music Website' });
 });
 
