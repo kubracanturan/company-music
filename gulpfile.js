@@ -12,7 +12,7 @@ var modules = {
 };
 
 
-// require("./gulp-folder/" + 'views.js')(modules);
+require("./gulp-folder/" + 'views.js')(modules);
 require("./gulp-folder/" + 'serve.js')(modules);
 require("./gulp-folder/" + 'copy.js')(modules);
 require("./gulp-folder/" + 'styles.js')(modules);
