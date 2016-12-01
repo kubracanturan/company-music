@@ -17,3 +17,4 @@ require("./gulp-folder/" + 'serve.js')(modules);
 require("./gulp-folder/" + 'copy.js')(modules);
 require("./gulp-folder/" + 'styles.js')(modules);
 require("./gulp-folder/" + 'scripts.js')(modules);
+require("./gulp-folder/" + 'create.js')(modules);
