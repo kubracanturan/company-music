@@ -1,6 +1,6 @@
 'use strict';
 
-const {{module_name}} = () => {
+const module_name = () => {
 
 };
 

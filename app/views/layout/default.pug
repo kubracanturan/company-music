@@ -8,4 +8,12 @@ html
 
         block content
 
+
+        //- inject:js
+        script(src="/js/current-music-alpha.js")
+        script(src="/js/sticky-menu-alpha.js")
+        //- endinject
         include ../includes/footer
+        script(src='/socket.io/socket.io.js')
+        script.
+            var socket = io();

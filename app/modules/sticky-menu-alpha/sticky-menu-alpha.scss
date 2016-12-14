@@ -1,37 +1,35 @@
 /*------------------------------------*\
-    #module_name
+    #sticky-menu-alpha
 \*------------------------------------*/
 
 /*<-- GLOBAL -->*/
-.module_name {
-
+.sticky-menu-alpha{
+  background-color: red;
+  height: 100px;
+  width: 100px;
 }
-
 // Usage
 /*<-- XS -->*/
 @media (max-width: 767px) {
-  .module_name {
+  .sticky-menu-alpha{
 
   }
 }
-
 /*<-- SM -->*/
 @media (min-width: 768px) {
-  .module_name {
+  .sticky-menu-alpha{
 
   }
 }
-
 /*<-- MD -->*/
 @media (min-width: 992px) {
-  .module_name {
+  .sticky-menu-alpha{
 
   }
 }
-
 /*<-- LG -->*/
 @media (min-width: 1200px) {
-  .module_name {
+  .sticky-menu-alpha{
 
   }
 }
