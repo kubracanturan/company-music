@@ -21,7 +21,7 @@ module.exports = function (m) {
         // region reload browserSync
         let timeout = null;
         m.gulp.watch([
-            'app/static/*.html',
+            'app/static/**/*.html',
             'app/static/images/**/*',
             'app/static/fonts/**/*',
             'app/static/js/**/*',
@@ -42,12 +42,13 @@ module.exports = function (m) {
         });
         // endregion
         // region watch tasks files
-        m.gulp.watch(['app/modules/**/*.scss', 'app/source/scss/compile/*.scss'], ['styles']);
-        m.gulp.watch(['app/views/pages/*.pug', 'app/views/layout/*.pug'], ['views']);
+        m.gulp.watch(['app/modules/**/*.scss', 'app/source/scss/compile/*.scss', 'app/source/scss/component/*.scss'], ['styles']);
+        m.gulp.watch(['app/modules/**/*.pug', 'app/views/pages/*.pug', 'app/views/layout/*.pug'], ['views']);
         m.gulp.watch(['app/source/icons/*.svg'], ['iconfont']);
         m.gulp.watch(['app/source/js/compile/*.js'], ['scripts']);
         m.gulp.watch(['app/source/fonts/**/*'], ['fonts']);
         m.gulp.watch(['app/source/copy/**/*'], ['copy']);
+        m.gulp.watch(['app/source/images/**/*'], ['images']);
         // endregion
     });
 };

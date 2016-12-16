@@ -22,6 +22,7 @@ const modules = {
 let config = '';
 
 require("./gulp-folder/tasks/" + 'views.js')(modules, config);
+require("./gulp-folder/tasks/" + 'images.js')(modules, config);
 require("./gulp-folder/tasks/" + 'serve.js')(modules, config);
 require("./gulp-folder/tasks/" + 'copy.js')(modules, config);
 require("./gulp-folder/tasks/" + 'fonts.js')(modules, config);
