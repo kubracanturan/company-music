@@ -1,6 +1,5 @@
 'use strict';
-
-const module_name = () => {
+modules['module_name'] = () => {
 
 };
 

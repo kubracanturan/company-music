@@ -1,3 +1,3 @@
-let fff = (re) => {
-    return re * 333;
+const modules = {
+
 };

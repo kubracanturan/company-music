@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["app.js"],"sourcesContent":["let fff = (re) => {\r\n    return re * 333;\r\n};"],"file":"app.js"}
+{"version":3,"names":[],"mappings":"","sources":["app.js"],"sourcesContent":["const modules = {\r\n\r\n};"],"file":"app.js"}

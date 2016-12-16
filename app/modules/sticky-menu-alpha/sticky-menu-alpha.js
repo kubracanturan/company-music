@@ -1,6 +1,5 @@
 'use strict';
-
-const sticky-menu-alpha = () => {
+modules['sticky-menu-alpha'] = () => {
 
 };
 

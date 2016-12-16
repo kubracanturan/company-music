@@ -1,0 +1,84 @@
+/*------------------------------------*\
+    #post-alpha
+\*------------------------------------*/
+
+/*<-- GLOBAL -->*/
+.post-alpha {
+  position: relative;
+  padding: $mobile-padding;
+  background-color: $color-2;
+  min-height: 50px;
+  font-size: 0;
+
+  .name,
+  .setting-panel {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+
+  .name {
+    width: calc(100% - #{20px});
+    line-height: 20px;
+    font-size: 14px;
+    color: $color-4;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+
+  }
+
+  .setting-panel {
+    position: absolute;
+    right: $mobile-padding;
+    top: 50%;
+    width: 20px;
+
+    .setting-icon {
+      transform: translateY(-50%);
+      line-height: 18px;
+      cursor: pointer;
+      text-align: center;
+
+      i {
+        $size: 18px;
+        width: $size;
+        height: $size;
+        font-size: $size;
+        color: $color-1;
+      }
+    }
+
+  }
+}
+
+// Usage
+/*<-- XS -->*/
+@media (max-width: 767px) {
+  .post-alpha {
+
+  }
+}
+
+/*<-- SM -->*/
+@media (min-width: 768px) {
+  .post-alpha {
+
+  }
+}
+
+/*<-- MD -->*/
+@media (min-width: 992px) {
+  .post-alpha {
+
+  }
+}
+
+/*<-- LG -->*/
+@media (min-width: 1200px) {
+  .post-alpha {
+
+  }
+}

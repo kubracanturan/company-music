@@ -1,3 +1,51 @@
+/**
+ * Variables
+ */
+// Sizes
+$sticky-menu-mobile-height: 70px;
+$mobile-padding: 15px;
+
+// Colors
+$color-1: #a19b88;
+$color-2: #2a2b2c;
+$color-3: #3e3f41;
+$color-4: #ffffff;
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin-ext');
+
 body {
   min-width: 320px;
+  background-color: $color-3;
+  font-family: 'PT Sans', sans-serif;
 }
+
+.space-bottom-1 {
+  height: 10px;
+  line-height: 10px;
+}
+
+a {
+  @include transition(all .35s);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+
+
+i {
+  color: inherit;
+  line-height: inherit;
+  vertical-align: top;
+  @include transition(all .35s);
+}
+
+
+
+
+

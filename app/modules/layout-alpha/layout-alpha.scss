@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    #layout-alpha
+\*------------------------------------*/
+
+/*<-- GLOBAL -->*/
+.layout-alpha {
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - #{$sticky-menu-mobile-height});
+  overflow: auto;
+}
+
+// Usage
+/*<-- XS -->*/
+@media (max-width: 767px) {
+  .layout-alpha {
+
+  }
+}
+
+/*<-- SM -->*/
+@media (min-width: 768px) {
+  .layout-alpha {
+
+  }
+}
+
+/*<-- MD -->*/
+@media (min-width: 992px) {
+  .layout-alpha {
+
+  }
+}
+
+/*<-- LG -->*/
+@media (min-width: 1200px) {
+  .layout-alpha {
+
+  }
+}

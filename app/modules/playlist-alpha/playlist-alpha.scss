@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    #playlist-alpha
+\*------------------------------------*/
+
+/*<-- GLOBAL -->*/
+.playlist-alpha {
+
+  .post-alpha {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+// Usage
+/*<-- XS -->*/
+@media (max-width: 767px) {
+  .playlist-alpha {
+
+  }
+}
+
+/*<-- SM -->*/
+@media (min-width: 768px) {
+  .playlist-alpha {
+
+  }
+}
+
+/*<-- MD -->*/
+@media (min-width: 992px) {
+  .playlist-alpha {
+
+  }
+}
+
+/*<-- LG -->*/
+@media (min-width: 1200px) {
+  .playlist-alpha {
+
+  }
+}

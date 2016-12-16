@@ -1,6 +1,5 @@
 'use strict';
-
-const current-music-alpha = () => {
+modules['current-music-alpha'] = () => {
 
 };
 

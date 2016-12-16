@@ -4,13 +4,14 @@ html
         include ../includes/head
 
     body
-        include ../includes/header
-
-        block content
-
-
+        .layout-alpha
+            include ../includes/header
+            block content
         //- inject:js
         script(src="/js/current-music-alpha.js")
+        script(src="/js/layout-alpha.js")
+        script(src="/js/playlist-alpha.js")
+        script(src="/js/post-alpha.js")
         script(src="/js/sticky-menu-alpha.js")
         //- endinject
         include ../includes/footer
