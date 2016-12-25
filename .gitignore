@@ -1,6 +1,7 @@
-/node_modules
 /.idea
 /app/static/
 /docs/
 /app/source/scss/compile/_icons.scss
 /app/source/fonts/icons/
+/bower_components/
+/node_modules/

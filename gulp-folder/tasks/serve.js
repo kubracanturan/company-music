@@ -1,5 +1,5 @@
 module.exports = function (m) {
-    m.gulp.task('serve', ['iconfont', 'inject', 'scripts', 'copy'], () => {
+    m.gulp.task('serve', ['iconfont', 'inject', 'scripts', 'copy', 'images'], () => {
         // region run after tasks
         m.gulp.start('views');
         m.gulp.start('fonts');

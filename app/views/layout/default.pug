@@ -1,19 +1,34 @@
-doctype html
+﻿doctype html
 html
     head
         include ../includes/head
-
+        // build:css styles/vendor.css
+        <!--bower:css-->
+        <link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css" />
+        <!--endbower-->
+        link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+        link(rel='stylesheet' type='text/css' href='/css/style.css')
+        // bower:css
+        // endbower
+        // endbuild
     body
         .layout-alpha
             include ../includes/header
             block content
-        //- inject:js
+        // build:js scripts/vendor.js
+        <!--bower:js-->
+        <script src="/bower_components/material-design-lite/material.min.js"></script>
+        <!--endbower-->
+        // bower:js
+        // endbower
+        // inject:js
         script(src="/js/current-music-alpha.js")
-        script(src="/js/layout-alpha.js")
         script(src="/js/playlist-alpha.js")
+        script(src="/js/layout-alpha.js")
         script(src="/js/post-alpha.js")
         script(src="/js/sticky-menu-alpha.js")
-        //- endinject
+        // endinject
+        // endbuild
         include ../includes/footer
         script(src='/socket.io/socket.io.js')
         script.

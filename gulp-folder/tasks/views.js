@@ -3,8 +3,8 @@ module.exports = function (m) {
         return m.gulp.src('app/views/pages/*.pug')
             .pipe(m.$.data(() => {
                 return {
-                    title: 'test',
-                    description: 'test'
+                    title: 'Title',
+                    description: 'Company music Rendering'
                 }
             }))
             .pipe(m.$.plumber())
